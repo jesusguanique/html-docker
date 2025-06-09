@@ -1,30 +1,31 @@
-🌐 Sitio Web Dockerizado con Nginx
+Este proyecto es una página web sencilla hecha con HTML y CSS. Lo interesante es que no necesitás instalar ningún servidor complicado para verla en acción: con Docker y Nginx podés levantarla en segundos.
 
-Este proyecto contiene una página web simple construida con HTML y CSS, que se ejecuta dentro de un contenedor Docker utilizando la imagen oficial de Nginx (`nginx:alpine`).
+Estructura del Proyecto
 
-## 📁 Estructura del Proyecto
+mi-sitio-web (el cual es el nombre de la carpeta)
+- index.html
+- styles.css
+- Dockerfile
+- README.md
 
-mi-sitio-web/
-├── index.html
-├── estilos.css
-├── Dockerfile
-└── README.md
-
-
-🧰 Requisitos
+Entre los requisitos debes tener instaladas las siguientes herramientas:
 
 - Docker Desktop instalado y funcionando.
-- Git (opcional, para subir el proyecto a GitHub).
+- Git (para subir el proyecto a GitHub)
+En este caso el proyecto se subio desde GITHUB 
 
-🚀 Uso del Proyecto
+Uso del Proyecto
 
-Para ejecutar este sitio web en un contenedor Docker, abrí la terminal, navegá a la carpeta del proyecto y ejecutá lo siguiente:
+Para ejecutar este sitio web en un contenedor Docker, en el buscador de Windows escribi "CMD" y abrí la terminal, una vez en la terminal debes escribir o pegar la ruta en la cual se encuentra tu proyecto y luego ejecutá lo siguiente:
 
 docker build -t mi-sitio-web .
 docker run -d -p 8080:80 mi-sitio-web
 
 
 Luego, accedé a tu navegador en `http://localhost:8080` y verás el sitio funcionando dentro del contenedor.
+OJO Para que pueda funcionar debes previamente haber descargado Docker y debe estar ejecutandose, si dice "Docker Desktop is running" esta correcto y no deberias presentar inconvenientes 
+
+![Captura de pantalla 2025-06-09 194313](https://github.com/user-attachments/assets/120d7720-25d5-4272-b178-1c78dcaf8694)
 
 🧪 Comprobación y Detención
 
@@ -32,13 +33,12 @@ Para ver los contenedores en ejecución:
 
 docker ps
 
-
 Para detener el contenedor:
 
 docker stop <ID-del-contenedor>
+Estos comando se ejcutan desde el CMD igualmente
 
-
-🐙 Subir el Proyecto a GitHub
+Subir el Proyecto a GitHub
 
 Podés subir este proyecto a GitHub ejecutando los siguientes comandos desde la carpeta del proyecto:
 
@@ -52,10 +52,11 @@ git push -u origin main
 
 (Sustituyendo `TU-USUARIO` por tu nombre de usuario real en GitHub)
 
-📦 Imagen Base
+Imagen Base:
 
 Este sitio usa como base la imagen `nginx:alpine`, un servidor web liviano y eficiente ideal para servir contenido estático como HTML y CSS.
 
-👤 Autor
+Autor:
 
 Jesús Guanique – Proyecto práctico con Docker + Git.
+https://www.linkedin.com/in/jesus-guanique/
