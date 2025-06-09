@@ -35,15 +35,15 @@ Comprobación y Detención
 
 Para ver los contenedores en ejecución:
 
-docker ps
+- docker ps
 
-Para detener el contenedor:
+- Para detener el contenedor:
 
-docker stop <ID-del-contenedor>
+- docker stop <ID-del-contenedor>
 
-Estos comando se ejecutan desde el CMD igualmente
+- Estos comando se ejecutan desde el CMD igualmente
 
-Subir el Proyecto a GitHub
+- Subir el Proyecto a GitHub
 
 Podés subir este proyecto a GitHub ejecutando los siguientes comandos desde la carpeta del proyecto:
 
