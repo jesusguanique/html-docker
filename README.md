@@ -23,11 +23,15 @@ docker run -d -p 8080:80 mi-sitio-web
 
 
 Luego, accedé a tu navegador en `http://localhost:8080` y verás el sitio funcionando dentro del contenedor.
+
 OJO Para que pueda funcionar debes previamente haber descargado Docker y debe estar ejecutandose, si dice "Docker Desktop is running" esta correcto y no deberias presentar inconvenientes 
 
 ![Captura de pantalla 2025-06-09 194313](https://github.com/user-attachments/assets/120d7720-25d5-4272-b178-1c78dcaf8694)
 
-🧪 Comprobación y Detención
+![Captura de pantalla 2025-06-09 195014](https://github.com/user-attachments/assets/1d188e29-0c15-4d2d-9ff6-419775f783dc)
+
+
+Comprobación y Detención
 
 Para ver los contenedores en ejecución:
 
@@ -36,7 +40,8 @@ docker ps
 Para detener el contenedor:
 
 docker stop <ID-del-contenedor>
-Estos comando se ejcutan desde el CMD igualmente
+
+Estos comando se ejecutan desde el CMD igualmente
 
 Subir el Proyecto a GitHub
 
@@ -49,8 +54,6 @@ git branch -M main
 git remote add origin https://github.com/TU-USUARIO/mi-sitio-web.git
 git push -u origin main
 
-
-(Sustituyendo `TU-USUARIO` por tu nombre de usuario real en GitHub)
 
 Imagen Base:
 
